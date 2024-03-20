@@ -7,6 +7,7 @@ const typeDefs = gql`
   type Query {
     hello(message: String!): String
     aboutJulian : String
+    aboutHerrera: String
   }
 `;
 
@@ -20,6 +21,10 @@ const resolvers = {
       return `Hola, soy Julian Rendon, soy estudiante de Ingeniería de Sistemas y mis pasatiempos
       favoritos son ver y jugar basketball, tenis de mesa y fútbol, además de jugar videojuegos
       y compartir con mis amigos y familia. `;
+    },
+    aboutHerrera: (_) => {
+      return `¡Hola! Soy Nicolas Herrera, estudiante de Ing de Sistemas en Univalle, me gusta el futbol (Hincha del Real Madrid) y 
+      disfruto de leer historias de fantasia y ciencia ficcion. Tambien me gusta leer y aprender de temas de historia y fisica.`
     },
   },
 };
