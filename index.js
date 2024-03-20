@@ -9,6 +9,7 @@ const typeDefs = gql`
     aboutJulian : String
     aboutHerrera: String
     aboutSamuel: String
+    aboutYissy: String
   }
 `;
 
@@ -29,6 +30,10 @@ const resolvers = {
     },
     aboutSamuel: (_) => {
       return `¡Hola! Soy Samuel, estudiante de Ingeniería de Sistemas en la Universidad del Valle. ultimamente me gusta bailar, conocer personas nuevas, salir de mi zona de confort, pasar algo de pena a veces y aprender cosas nuevas.`
+    },
+    aboutYissy: (_) => {
+      return `¡Hola! Soy Yissy, estudiante de ingeniería de sistemas en univalle. Me gusta mucho la música y lo que implica: escuchar, cantar y bailar.
+      Ultimamente disfruto mucho ir al gimnasio y la vida fitness, sin embargo el dulce ha sido mi kryptonita :( `
     },
   },
 };
