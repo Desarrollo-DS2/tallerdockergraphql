@@ -8,6 +8,7 @@ const typeDefs = gql`
     hello(message: String!): String
     aboutJulian : String
     aboutHerrera: String
+    aboutSamuel: String
   }
 `;
 
@@ -25,6 +26,9 @@ const resolvers = {
     aboutHerrera: (_) => {
       return `¡Hola! Soy Nicolas Herrera, estudiante de Ing de Sistemas en Univalle, me gusta el futbol (Hincha del Real Madrid) y 
       disfruto de leer historias de fantasia y ciencia ficcion. Tambien me gusta leer y aprender de temas de historia y fisica.`
+    },
+    aboutSamuel: (_) => {
+      return `¡Hola! Soy Samuel, estudiante de Ingeniería de Sistemas en la Universidad del Valle. ultimamente me gusta bailar, conocer personas nuevas, salir de mi zona de confort, pasar algo de pena a veces y aprender cosas nuevas.`
     },
   },
 };
