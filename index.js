@@ -11,6 +11,7 @@ const typeDefs = gql`
     aboutSamuel: String
     aboutYissy: String
     aboutChristian: String
+    aboutJuan: String
   }
 `;
 
@@ -40,6 +41,9 @@ const resolvers = {
       return `Hola:). Soy Christian, tengo 26 años y soy estudiante de Ingeniería de Sistemas en la Universidad del Valle.
       Me gusta mucho aprender idiomas y mi artista favorita es Lana del Rey.
       Ingeniería de Sistemas es mi segunda carrera, antes estudié Ingeniería Química.`
+    },
+    aboutJuan: (_) => {
+      return `Hola mundo! soy Juan Loaiza, un joven de 20 años que respira tecnologia y se emociona con los grandes proyectos de software, también soy un apasionado melómano que ama descubrir canciones, artistas y generos nuevos pa poner a vibrar mis oidos y mis dias ヾ(⌐■_■)ノ♪, desde el metal sacudiendo mis sentidos hasta el jazz acariciando mi alma, la electrónica marcando el pulso de mis latidos y el dubstep desafiando mi sentido del ritmo (ﾉ^_^)ﾉ`
     },
   },
 };
