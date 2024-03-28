@@ -10,6 +10,7 @@ const typeDefs = gql`
     aboutHerrera: String
     aboutSamuel: String
     aboutYissy: String
+    aboutChristian: String
   }
 `;
 
@@ -34,6 +35,11 @@ const resolvers = {
     aboutYissy: (_) => {
       return `¡Hola! Soy Yissy, estudiante de ingeniería de sistemas en univalle. Me gusta mucho la música y lo que implica: escuchar, cantar y bailar.
       Ultimamente disfruto mucho ir al gimnasio y la vida fitness, sin embargo el dulce ha sido mi kryptonita :( `
+    },
+    aboutChristian: (_) => {
+      return `Hola:). Soy Christian, tengo 26 años y soy estudiante de Ingeniería de Sistemas en la Universidad del Valle.
+      Me gusta mucho aprender idiomas y mi artista favorita es Lana del Rey.
+      Ingeniería de Sistemas es mi segunda carrera, antes estudié Ingeniería Química.`
     },
   },
 };
