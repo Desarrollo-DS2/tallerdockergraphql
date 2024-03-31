@@ -13,6 +13,7 @@ const typeDefs = gql`
     aboutChristian: String
     aboutJuan: String
     aboutJohn: String
+    aboutSebastian: String
   }
 `;
 
@@ -51,6 +52,9 @@ const resolvers = {
       Me gusta mucho jugar videojuegos, es mi pasatiempo principal, tambien me gusta compartir con mis amigos e ir al gimnasio,
       ademas entrenaba Judo pero actualmente estoy retirado por una lesion.`
     }
+    aboutSebastian: (_) => {
+      return `Hola, soy Sebastian Muñoz, tengo 20 años y soy un estudiante de Ingenieria de Sistemas. Me gusta ir al gimnasio, hacer y ver distintos deportes. Me encanta descubrir nuevas peliculas y música, así como disfrtuar el tiempo con mi familia y amigos.`
+    },
   },
 };
 
